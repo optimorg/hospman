@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DoctorComponent {
 
+  addDoctor() {
+    alert("You clicked add doctor");
+  }
 }

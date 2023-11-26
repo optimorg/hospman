@@ -11,16 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { DoctorComponent } from './component/dashboard/doctor/doctor.component';
 import { SidebarComponent } from './component/dashboard/sidebar/sidebar.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { AddDoctorComponent } from './component/dashboard/doctor/add-doctor/add-doctor.component';
 @NgModule({
   declarations: [
     AppComponent,
     DoctorComponent,
-    SidebarComponent
+    SidebarComponent,
+    AddDoctorComponent
   ],
   imports: [
     BrowserModule,
@@ -28,13 +25,7 @@ import { MatListModule } from '@angular/material/list';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
-
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
