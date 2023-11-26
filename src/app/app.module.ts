@@ -28,6 +28,7 @@ import { AddDoctorComponent } from './component/dashboard/doctor/add-doctor/add-
     MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AddDoctorComponent]
 })
 export class AppModule { }
