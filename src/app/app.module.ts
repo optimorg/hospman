@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import {environment} from '../environments/environment';
+import { MaterialModule } from './material/material/material.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +16,8 @@ import {environment} from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    MaterialModule
 
   ],
   providers: [],
