@@ -29,6 +29,5 @@ import { AddDoctorComponent } from './component/dashboard/doctor/add-doctor/add-
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [AddDoctorComponent]
 })
 export class AppModule { }
