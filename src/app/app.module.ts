@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import {environment} from '../environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material/material.module';
 import { DoctorComponent } from './component/dashboard/doctor/doctor.component';
 import { PatientComponent } from './component/patient/patient.component';

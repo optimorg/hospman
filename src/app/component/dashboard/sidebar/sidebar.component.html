@@ -1,4 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
+<<<<<<< HEAD
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -8,20 +9,41 @@
       <a mat-list-item href="#">Link 1</a>
       <a mat-list-item href="#">Link 2</a>
       <a mat-list-item href="#">Link 3</a>
+=======
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active"
+        routerLink="dashboard/patient"><mat-icon>personal_injury</mat-icon>Patient</a>
+      <a mat-list-item routerLinkActive="active"
+        routerLink="dashboard/doctor"><mat-icon>diversity_1</mat-icon>Doctor</a>
+>>>>>>> dashboard
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
+<<<<<<< HEAD
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
+=======
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+>>>>>>> dashboard
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>hospital-management</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+<<<<<<< HEAD
   </mat-sidenav-content>
 </mat-sidenav-container>
+=======
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+>>>>>>> dashboard
