@@ -8,16 +8,32 @@ import {AngularFireModule} from '@angular/fire/compat';
 import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import {environment} from '../environments/environment';
 import { MaterialModule } from './material/material/material.module';
+import { DoctorComponent } from './component/dashboard/doctor/doctor.component';
+import { PatientComponent } from './component/patient/patient.component';
+import { SidebarComponent } from './component/dashboard/sidebar/sidebar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DoctorComponent,
+    PatientComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    MaterialModule
+    MaterialModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
 
   ],
   providers: [],
